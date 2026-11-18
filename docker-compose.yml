@@ -1,0 +1,8 @@
+services:
+  paper-trader:
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./runs.sqlite3:/app/runs.sqlite3
+    restart: unless-stopped
